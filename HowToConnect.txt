@@ -1,0 +1,18 @@
+Settings of the XMEGA:
+Connect Atmel PROTO1 Xplained Pro to Atmel XMEGA A1U Xplained Pro.
+Then, connect the 1.8 TFT LCD board like so:
+LCD<>PROTO:
+VCC<>VCC
+GND<>GND
+CS<>GPIO1 (PORTE6)
+RESET<>GPIO2 (PORTE7)
+A0<>GPIO3 (PORTR1)
+SDA<>MOSI (PORTC5)
+SCK<>SCK (PORTC7)
+LED<>VCC
+
+If you don't have the Xplained boards, just connect the LCD to the specified port pins directly.
+The clock is a 32.768kHz crystal.
+XMEGA<>CRYSTAL:
+PQ0<>XIN32 (TOSC1)
+PQ1<>XOUT32 (TOSC2)
